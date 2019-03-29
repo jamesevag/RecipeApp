@@ -32,4 +32,17 @@ export class DataStorageService {
         }
       );
   }
+
+  addRecipe(recipe : Recipe) {
+     this.http.post('https://my-project-7dce7.firebaseio.com/recipes.json', recipe);
+  }
+
+  updateRecipe(recipe : Recipe) {
+    this.http.put('https://my-project-7dce7.firebaseio.com/recipes.json', recipe);
+  }
+
+ deleteRecipe(recipe : Recipe) {
+  this.http.delete('https://my-project-7dce7.firebaseio.com/recipes.json', recipe.id);
+  }
+
 }
