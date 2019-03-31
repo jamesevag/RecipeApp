@@ -4,14 +4,14 @@
             <div routerLinkActive="active" class="navbar-header" >
                 <a routerLink="/biography"  style="color:white;" class="navbar-brand" (loadedFeature)="biography">Biography</a>
               </div>
+              <div class="nav navbar-nav">
+                <a routerLinkActive="active" routerLink="/recipes" style="color:white;"  class="navbar-brand" (loadedFeature)="recipe">Recipes</a>
+                <a routerLinkActive="active"  routerLink="/shopping-list"  style="color:white;" class="navbar-brand" (loadedFeature)="shopping-list">Shopping List</a>
+              </div>
           <div class="collapse navbar-collapse" >
-            <ul class="nav navbar-nav">
-              <li routerLinkActive="active"><a routerLink="/recipes" style="color:white;"  class="navbar-brand" (loadedFeature)="recipe">Recipes</a></li>
-              <li routerLinkActive="active"><a  routerLink="/shopping-list"  style="color:white;" class="navbar-brand" (loadedFeature)="shopping-list">Shopping List</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right" >
-              <li routerLinkActive="active"><a routerLink="/login" style="color:white;"  class="navbar-brand" (loadedFeature)="login">Login</a></li>
-            </ul>
+            <div class="nav navbar-nav navbar-right" >
+              <a routerLinkActive="active" routerLink="/login" style="color:white;"  class="navbar-brand" (loadedFeature)="login">Login</a>
+            </div>
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown" appDropdown>
                   <a style="cursor: pointer;" class="dropdown-toggle" role="button">Manage <span class="caret"></span></a>
