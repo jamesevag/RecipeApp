@@ -35,6 +35,7 @@ export class RecipeListComponent implements OnInit, OnDestroy {
       }
     );   
     
+
   }
 
   onNewRecipe(recipe : Recipe) {
